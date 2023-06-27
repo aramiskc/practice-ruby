@@ -4,3 +4,5 @@
 #  Be sure to use symbols for the keys. Try creating hashes using both types of hash symbol syntaxes. (Ruby syntax {:a => 123} vs. “JavaScript” syntax {a: 123}).
 
 {:name => "Shirt", :color => "Blue", :price => 20.00} {:name => "Pants", :color => "Black", :price => 30.00} {:name => "Hat", :color => "Red", :price => 15.00}
+
+name: "Shirt", color: "Blue", price: 20.00} {name: "Pants", color: "Black", price: 30.00} {name: "Hat", color: "Red", price: 15.00}
