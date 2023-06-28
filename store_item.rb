@@ -15,33 +15,24 @@
 
 
 
-class StoreItem
-  attr_accessor :name, :color, :price
+ class StoreItem
+   attr_accessor :name, :color, :price
+   attr_writer :name, :color, :price
 
-  def initialize(name, color, price)
-    @name = name
-    @color = color
-    @price = price
+ def initialize(name, color, price)
+   @name = name
+   @color = color
+   @price = price
   end
 
-  def name
-    @name
-  end
 
-  def color
-    @color
-  end
+ end
 
-  def price
-    @price
-  end
+ shirt = StoreItem.new("Shirt", "Blue", 20.00)
+ pants = StoreItem.new("Pants", "Black", 30.00)
+ hat = StoreItem.new("Hat", "Red", 15.00)
 
-end
+ p shirt.name
+ p hat.color
+ p pants.price
 
-shirt = StoreItem.new("Shirt", "Blue", 20.00)
-pants = StoreItem.new("Pants", "Black", 30.00)
-hat = StoreItem.new("Hat", "Red", 15.00)
-
-p shirt.name
-p hat.color
-p pants.price
