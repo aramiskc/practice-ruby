@@ -15,24 +15,41 @@
 
 
 
- class StoreItem
-   attr_accessor :name, :color, :price
-   attr_writer :name, :color, :price
+#  class StoreItem
+#    attr_accessor :name, :color, :price
+#    attr_writer :name, :color, :price
 
- def initialize(name, color, price)
-   @name = name
-   @color = color
-   @price = price
+#  def initialize(name, color, price)
+#    @name = name
+#    @color = color
+#    @price = price
+#   end
+
+
+#  end
+
+#  shirt = StoreItem.new("Shirt", "Blue", 20.00)
+#  pants = StoreItem.new("Pants", "Black", 30.00)
+#  hat = StoreItem.new("Hat", "Red", 15.00)
+
+#  p shirt.name
+#  p hat.color
+#  p pants.price
+
+class StoreItem
+  attr_accessor :name, :color, :price
+
+  def initialize(options)
+    @name = options[:name]
+    @color = options[:color]
+    @price = options[:price]
   end
+end
 
+shirt = StoreItem.new(name: "Shirt", color: "Blue", price: 20.00)
+pants = StoreItem.new(name: "Pants", color: "Black", price: 30.00)
+hat = StoreItem.new(name: "Hat", color: "Red", price: 15.00)
 
- end
-
- shirt = StoreItem.new("Shirt", "Blue", 20.00)
- pants = StoreItem.new("Pants", "Black", 30.00)
- hat = StoreItem.new("Hat", "Red", 15.00)
-
- p shirt.name
- p hat.color
- p pants.price
-
+p shirt.name
+p hat.color
+p pants.price
