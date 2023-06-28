@@ -53,3 +53,4 @@ hat = StoreItem.new(name: "Hat", color: "Red", price: 15.00)
 p shirt.name
 p hat.color
 p pants.price
+  
